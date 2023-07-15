@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
     markdown=''
     for idx in range(len(contributors)):
-      markdown += f'<img src="{avatars[idx]}" alt="{contributors[idx]}" style="max-width: 30px; border-radius: 50%;">'
+      markdown += f'<img src="{avatars[idx]}" alt="{contributors[idx]}" width="35" height="35" style="border-radius: 50%;">'
 
     # 打印Markdown格式
     print(markdown)
