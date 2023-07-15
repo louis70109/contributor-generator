@@ -1,0 +1,22 @@
+name: 'Contributor generator Actions'
+description: 'Generate GitHub contributor list at bottom of README'
+author: 'NiJia Lin'
+inputs:
+  token:
+    description: 'GitHub access_token'
+    required: true
+  owner:
+    description: 'GitHub repo owner'
+    required: true
+    default: 'louis70109'
+  repo:
+    description: 'GitHub Repo name'
+    required: true
+    default: 'lotify'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'message-square'
+  color: 'blue'
